@@ -1,0 +1,365 @@
+html, body {
+    height:100%;
+    margin:0;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 170%;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	color: #87c162;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.outer-container {
+	display: flex;
+	flex-direction: row;
+	display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+	margin: 0px;
+	height: 100%;
+}
+
+.content-container {
+	height: 100%;
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+	-webkit-flex: 1;
+    flex:1;
+    position:relative;
+    align-items: center;
+    display: flex;
+}
+
+.menu-container {
+	height: 100%;
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+.photo-container {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/10.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+
+.gradient {
+	background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,1));
+	width: 100%;
+	height: 100%;
+}
+
+.overlay-poem {
+	width: 300px;
+	height: 60%;
+	position: fixed;
+	top: 15%;
+	right: 20%;
+	background-color: none;
+	
+}
+
+.poem {
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    font-family: 'Roboto Slab', serif;
+}
+
+.subbtn {
+	background-color: white;
+    color: #87c162;;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    font-family: 'Roboto Slab', serif;
+}
+
+.subbtn:hover {
+	background-color: green;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: white;
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #87c162;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    float:left;
+	clear:left;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #ddb539;
+}
+
+@media only screen and (min-width: 1000px) {
+
+.content-container {
+
+}
+
+.menu-container {
+	width: 250px;
+}
+
+.overlay {
+	
+}
+
+.overlay-hugeinc {
+	
+}
+
+
+nav {
+	height: 0%;
+}
+
+ul, li, a{
+	height: 0%;
+}
+
+}
+
+@media only screen and (max-width: 999px){
+
+.content-container {
+}
+
+.menu-container {
+	width: 0px;
+}
+
+.dropdown {
+	background-color: rgba(153,204,51,1);
+}
+
+.dropbtn {
+	background-color: rgba(153,204,51,1);
+}
+
+.dropdown-content {
+	background-color: rgba(153,204,51,1);
+}
+
+.subbtn {
+	background-color: rgba(153,204,51,1);
+	color: black;
+}
+
+#nav-toggle { position: absolute; left: 90%; top: 5%; }
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: grey;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(153,204,51,1);
+	visibility: visible;
+}
+
+/* Overlay closing cross */
+/*.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}*/
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/*.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}*/
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+
+
+
+}
+
+
+
