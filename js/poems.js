@@ -103,6 +103,7 @@ function updatePage(j) {
 		$(".photo-container").css("background-image", "url(" + poem.img + ")");
 		$(".poem").html(poem.text);
 		$('.open').removeClass('open');
+		$('.active').removeClass('active');
 	}
 }
 

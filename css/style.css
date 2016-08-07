@@ -209,7 +209,7 @@ ul, li, a{
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: grey;
+  background: #87c162;
   position: absolute;
   display: block;
   content: '';
@@ -232,9 +232,11 @@ ul, li, a{
 }
 #nav-toggle.active span:before {
   transform: rotate(45deg);
+  background: black;
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
+  background: black;
 }
 
 /* Overlay style */
