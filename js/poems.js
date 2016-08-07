@@ -1,3 +1,9 @@
+var intro = {
+	"title" : "Chuc Mung Sinh Nhat 60 Tuoi!",
+	"text" : "<p>Cac con chuc ba mang khoe, vui ve .. etc</p>",
+	"img" : "img/2.png"
+};
+
 var poem3 = {
 		"title" : "KỶ NIỆM",
 		"text" : "<p>Kho tàng kỷ niệm thật mênh mông<br>Những vật vô tri đầy ý tứ<br>Những chuyện vui buồn trong quá khứ<br>Kiểu ngồi, dáng đứng, ánh mắt trông...<br>Kỷ niệm chẳng hề giống dòng sông<br>Với bến đợi vẽ tô hào nhoáng<br>Kỷ niệm như mảng đời ngắt quãng<br>Chợt ào về giây phút ngẩn ngơ !<br><br>Kỷ niệm đôi lúc đẹp như mơ<br>Có khi dằng dai như chủ nợ<br>Từng thời chéo chồng trong nỗi nhớ<br>Như họa đồ những chốn kinh qua !<br><br>Kỷ niệm chẳng hề giống sân ga<br>Mỏi mòn đón đưa người qua lại<br>Kỷ niệm giống như tàu không lái<br>Chẳng biết bao giờ hết lang thang !<br><br>Kỷ niệm xẻ chia niềm xốn xang<br>Là lời ru khi đời khốn khó<br>Là gói hành trang ảo huyền nho nhỏ<br>Là những gì sống chết cũng gắng mang !<br></p>",
@@ -88,7 +94,7 @@ var poem15 = {
 		"img" : "img/3.png"		
 };
 
-var poems = [poem1, poem2, poem3, poem4, poem5, poem6, poem7, poem8, poem9, poem10, poem11, poem12, poem13, poem14, poem15];
+var poems = [intro, poem1, poem2, poem3, poem4, poem5, poem6, poem7, poem8, poem9, poem10, poem11, poem12, poem13, poem14, poem15];
 
 function updatePage(j) {
 	return function() {
@@ -102,8 +108,7 @@ function updatePage(j) {
 
 $(document).ready(function(){
 	for (var i=0; i<poems.length; i++) {
-		buttonnum = i + 1;
-		buttonname = "#btn" + buttonnum;
+		buttonname = "#btn" + i;
 		$(buttonname).click(updatePage(i));
 	} 
 
