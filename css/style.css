@@ -270,7 +270,7 @@ ul, li, a{
 .overlay nav {
 	text-align: center;
 	position: relative;
-	top: 40%;
+	top: 45%;
 	height: 60%;
 	font-size: 54px;
 	-webkit-transform: translateY(-50%);
@@ -344,6 +344,12 @@ ul, li, a{
 .overlay-hugeinc.close nav ul {
 	-webkit-transform: translateY(25%) rotateX(-35deg);
 	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media only screen and (max-width: 999px){
+	h1 {
+		font-size: 20px
+	}
 }
 
 @media screen and (max-height: 30.5em) {
