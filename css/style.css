@@ -225,7 +225,14 @@ ul, li, a{
 
 .subbtn {
 	background-color: rgba(153,204,51,1);
-	color: black;
+	color: white;
+}
+
+.dropdown-content :hover {background-color: rgba(153,204,51,1);}
+
+.poem-container{
+	padding: 10px;
+
 }
 
 #nav-toggle { position: fixed; right: 5%; top: 5%; }
@@ -235,8 +242,8 @@ ul, li, a{
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
-  height: 5px;
-  width: 35px;
+  height: 3px;
+  width: 30px;
   background: #87c162;
   position: absolute;
   display: block;
