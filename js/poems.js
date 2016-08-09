@@ -1,6 +1,6 @@
 var intro = {
 	"title" : "Chuc Mung Sinh Nhat 60 Tuoi!",
-	"text" : "<p>Hỏi:<br>Sáu mươi năm vượt bao ngàn sông núi<br>Bạn hỏi tôi đang tìm kiếm điều gì?<br>Thưa: <br>Đó chính là chặng đường tôi đi đó<br>Với vô vàn kỷ niệm và tình thương...<br><br>Chúc mừng Sinh Nhật thứ 60 của Ông Nội!<br>Ba Que, Nhím, Long, Trang, và Pony</p>",
+	"text" : "<p>Hỏi:<br>Sáu mươi năm vượt bao ngàn sông núi<br>Bạn hỏi tôi đang tìm kiếm điều gì?<br>Thưa: <br>Đó chính là chặng đường tôi đi đó<br>Với vô vàn kỷ niệm và tình thương...<br><br>Chúc mừng Sinh Nhật thứ 60 của Ông Nội!<br>Bà Quế, Nhím, Long, Trang, và Pony</p>",
 	"img" : "img/2.png",
 	"topic" : "0"
 };
@@ -129,23 +129,4 @@ $(document).ready(function(){
 		buttonname = "#btn" + i;
 		$(buttonname).click(updatePage(i));
 	} 
-
-    // $("#btn1").click(function(){
-    //     $("h1").replaceWith("<h1>" + poem1.title + "</h1>");
-    //     $(".photo-container").css("background-image", "url(" + poem1.img + ")");
-    //     $(".poem").html(poem1.text);
-    //     $('.open').removeClass('open');
-    // });
-    // $("#btn2").click(function(){
-    //     $("h1").replaceWith("<h1>" + poem2.title + "</h1>");
-    //     $(".photo-container").css("background-image", "url(" + poem2.img + ")");
-    //     $(".poem").html(poem2.text);
-    //     $('.open').removeClass('open');
-    // });
-    //  $("#btn3").click(function(){
-    //     $("h1").replaceWith("<h1>" + poem3.title + "</h1>");
-    //     $(".photo-container").css("background-image", "url(" + poem3.img + ")");
-    //     $(".poem").html(poem3.text);
-    //     $('.open').removeClass('open');
-    // });
 });
