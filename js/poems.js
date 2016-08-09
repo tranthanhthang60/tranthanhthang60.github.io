@@ -1,5 +1,5 @@
 var intro = {
-	"title" : "Chuc Mung Sinh Nhat 60 Tuoi!",
+	"title" : "Chúc Mừng Sinh Nhật 60 Tuổi!",
 	"text" : "<p>Hỏi:<br>Sáu mươi năm vượt bao ngàn sông núi<br>Bạn hỏi tôi đang tìm kiếm điều gì?<br>Thưa: <br>Đó chính là chặng đường tôi đi đó<br>Với vô vàn kỷ niệm và tình thương...<br><br>Chúc mừng Sinh Nhật thứ 60 của Ông Nội!<br>Bà Quế, Nhím, Long, Trang, và Pony</p>",
 	"img" : "img/2.png",
 	"topic" : "0"

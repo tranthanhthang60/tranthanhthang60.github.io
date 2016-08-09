@@ -12,7 +12,7 @@ p {
 }
 
 h1 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	color: #87c162;
 	font-size: 25px;
 	font-weight: 700;
@@ -87,7 +87,7 @@ h1 {
     cursor: pointer;
     width: 100%;
     text-align: right;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
 }
 
 .plus:before {
@@ -168,8 +168,10 @@ h1 {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    text-decoration: underline;
+    text-decoration: none;
+
 }
+
 
 @media only screen and (min-width: 1000px) {
 
